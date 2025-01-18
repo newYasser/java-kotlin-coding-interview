@@ -22,4 +22,10 @@ class Game(private val playerA: Player, private val playerB: Player, private val
         }
     }
 
+    fun printResults(){
+        println("Player A wins $playerAWins of $rounds games")
+        println("Player B wins $playerBWins of $rounds games")
+        println("Draws: $draws of $rounds games")
+    }
+
 }
