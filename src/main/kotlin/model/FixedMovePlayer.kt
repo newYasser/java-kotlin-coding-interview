@@ -2,6 +2,6 @@ package model
 
 import enum.Move
 
-class FixedMovePlayer(private val move: Move) : Player {
+class FixedMovePlayer(override val name:String,private val move: Move) : Player {
     override fun makeMove(): Move = move
 }
